@@ -1,0 +1,4 @@
+# Production template. The current HTML itself is noindex for the Vercel preview.
+User-agent: *
+Allow: /
+Sitemap: https://gsorental.com/sitemap.xml

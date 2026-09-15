@@ -1,0 +1,7 @@
+When gsorental.com goes live:
+1. Change <meta name="robots" content="noindex,nofollow"> to <meta name="robots" content="index,follow">.
+2. Add: <link rel="canonical" href="https://gsorental.com/">
+3. Add: <meta property="og:url" content="https://gsorental.com/">
+4. Add a 1200x630 social sharing image and set og:image / twitter:image.
+5. Deploy robots.txt and sitemap.xml from the templates in this project.
+6. Register the domain with Google Search Console after DNS is active.
