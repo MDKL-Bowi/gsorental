@@ -119,6 +119,7 @@ a:focus-visible,button:focus-visible{outline:3px solid rgba(11,139,194,.38);outl
 .map-placeholder>*:not(.map-grid){position:relative;z-index:1}
 .map-pin{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-size:24px;box-shadow:0 12px 28px rgba(198,36,47,.2);margin-bottom:12px}
 .map-placeholder span{font-size:12px;color:var(--muted);margin-top:4px}
+.map-placeholder address{position:relative;z-index:1;margin-top:8px;text-align:center;font-style:normal;font-size:13px;line-height:1.65;color:var(--muted);padding:0 24px}
 .contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:center;padding:120px 0}
 .contact-copy p{color:var(--muted);max-width:500px}
 .contact-panel{border-top:1px solid var(--line)}
