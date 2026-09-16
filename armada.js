@@ -1,8 +1,8 @@
 const fleet = [
-  {name:'New Avanza 1.5 G CVT',type:'MPV',spec:'MPV • Automatic • 7 Penumpang',img:'assets/avanza.webp',tags:['mpv'],message:'New Avanza 1.5 G CVT'},
-  {name:'New Veloz Hybrid EV',type:'HYBRID MPV',spec:'MPV • Automatic • 7 Penumpang',img:'assets/veloz.webp',tags:['mpv','hybrid'],message:'New Veloz Hybrid EV'},
-  {name:'All New Innova Zenix Hybrid EV',type:'HYBRID MPV',spec:'MPV • Automatic • 7 Penumpang',img:'assets/zenix.webp',tags:['mpv','hybrid'],message:'All New Innova Zenix Hybrid EV'},
-  {name:'Hiace Commuter',type:'COMMUTER',spec:'MPV • Manual • 8–15 Penumpang',img:'assets/hiace.webp',tags:['commuter'],message:'Hiace Commuter'}
+  {name:'New Avanza 1.5 G CVT',type:'MPV',spec:'MPV • Automatic • 7 Penumpang',img:'/assets/avanza.webp',tags:['mpv'],message:'New Avanza 1.5 G CVT'},
+  {name:'New Veloz Hybrid EV',type:'HYBRID MPV',spec:'MPV • Automatic • 7 Penumpang',img:'/assets/veloz.webp',tags:['mpv','hybrid'],message:'New Veloz Hybrid EV'},
+  {name:'All New Innova Zenix Hybrid EV',type:'HYBRID MPV',spec:'MPV • Automatic • 7 Penumpang',img:'/assets/zenix.webp',tags:['mpv','hybrid'],message:'All New Innova Zenix Hybrid EV'},
+  {name:'Hiace Commuter',type:'COMMUTER',spec:'MPV • Manual • 8–15 Penumpang',img:'/assets/hiace.webp',tags:['commuter'],message:'Hiace Commuter'}
 ];
 
 let filtered = [...fleet];
