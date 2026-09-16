@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#f7f7f5"/>
+  <text x="32" y="39" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="800" fill="#111318">GSO</text>
+  <rect x="18" y="45" width="28" height="3" rx="1.5" fill="#969ba2"/>
+</svg>

@@ -1,7 +1,14 @@
-When gsorental.com goes live:
-1. Change <meta name="robots" content="noindex,nofollow"> to <meta name="robots" content="index,follow">.
-2. Add: <link rel="canonical" href="https://gsorental.com/">
-3. Add: <meta property="og:url" content="https://gsorental.com/">
-4. Add a 1200x630 social sharing image and set og:image / twitter:image.
-5. Deploy robots.txt and sitemap.xml from the templates in this project.
-6. Register the domain with Google Search Console after DNS is active.
+GSO RENTAL - PRODUCTION SEO CHECKLIST
+
+Preview deployments intentionally use:
+<meta name="robots" content="noindex,nofollow">
+
+When gsorental.com is ready:
+1. Change robots meta on every HTML page to index,follow.
+2. Add a canonical URL to every page using its production URL.
+3. Add og:url and a 1200x630 og:image / twitter:image.
+4. Keep robots.txt and sitemap.xml at the site root.
+5. Add each real article URL to sitemap.xml when published.
+6. Connect gsorental.com to Google Search Console after DNS is active.
+7. Replace the map placeholder with the confirmed business / pickup location only after the client approves it.
+8. Replace placeholder social links / email notes with verified production details.
