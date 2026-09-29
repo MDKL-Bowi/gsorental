@@ -20,8 +20,9 @@ a:focus-visible,button:focus-visible{outline:3px solid rgba(11,139,194,.38);outl
 /* Navigation */
 .nav-wrap{position:sticky;top:0;z-index:30;background:rgba(247,247,245,.90);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(17,19,24,.07)}
 .nav{position:relative;height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{font-size:21px;font-weight:800;letter-spacing:-1px;text-decoration:none;color:var(--ink);flex-shrink:0}
-.brand span{font-weight:500;margin-left:5px;color:var(--muted)}
+.brand{font-size:21px;font-weight:800;letter-spacing:-1px;text-decoration:none;color:var(--ink);flex-shrink:0;white-space:nowrap}
+.brand b{font:inherit;color:var(--muted)}
+.brand span{font-size:.66em;font-weight:650;letter-spacing:-.15px;margin-left:1px;color:var(--muted)}
 .nav-links{display:flex;align-items:center;gap:32px}
 .nav-links a{color:var(--ink);text-decoration:none;font-weight:600;font-size:14px;min-height:40px;display:inline-flex;align-items:center}
 .nav-links a:hover,.nav-links a.active{color:var(--accent)}
@@ -227,7 +228,7 @@ a:focus-visible,button:focus-visible{outline:3px solid rgba(11,139,194,.38);outl
 footer{background:#090a0c;color:#fff;padding:40px 0}
 footer .container{display:flex;align-items:center;gap:25px}
 footer p{color:#8f939a;font-size:12px;flex:1}
-.brand.inverse{color:#fff}.brand.inverse span{color:#92969c}
+.brand.inverse{color:#fff}.brand.inverse b,.brand.inverse span{color:#92969c}
 footer small{color:#8f939a}
 
 /* Progressive enhancement: content stays visible if JS is blocked or fails. */

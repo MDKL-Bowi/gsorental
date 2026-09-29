@@ -1,14 +1,22 @@
-GSO RENTAL - PRODUCTION SEO CHECKLIST
+GSO RENT — PRODUCTION SEO STATUS
 
-Preview deployments intentionally use:
-<meta name="robots" content="noindex,nofollow">
+READY IN THIS BUILD
+- Main pages changed from noindex to index,follow,max-image-preview:large
+- Canonical URLs use https://gsorental.com/
+- Open Graph URLs/images use the production domain
+- LocalBusiness/AutoRental JSON-LD includes the Batam office address
+- robots.txt points to the production sitemap
+- sitemap.xml contains only indexable pages: /, /armada/, /layanan/
+- /artikel/ remains noindex,follow until real articles are published
+- Article navigation is hidden until content is ready
+- Armada JS uses root-relative /assets/... paths
+- workers.dev and preview URLs are disabled in wrangler.jsonc
 
-When gsorental.com is ready:
-1. Change robots meta on every HTML page to index,follow.
-2. Add a canonical URL to every page using its production URL.
-3. Add og:url and a 1200x630 og:image / twitter:image.
-4. Keep robots.txt and sitemap.xml at the site root.
-5. Add each real article URL to sitemap.xml when published.
-6. Connect gsorental.com to Google Search Console after DNS is active.
-7. Replace the map placeholder with the confirmed business / pickup location only after the client approves it.
-8. Replace placeholder social links / email notes with verified production details.
+CLOUDFLARE DASHBOARD
+- Keep gsorental.com as the production custom domain
+- Create a proxied DNS record for www and redirect www.gsorental.com -> gsorental.com with HTTP 301, preserving path and query string
+
+AFTER DEPLOY
+- Test /, /armada/, /layanan/, /robots.txt, /sitemap.xml
+- Add https://gsorental.com/ to Google Search Console and submit /sitemap.xml
+- Claim/update the Google Business Profile with the same name, phone and address used on the site

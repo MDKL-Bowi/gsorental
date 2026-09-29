@@ -1,14 +1,8 @@
-const fleet = [
-  {name:'New Avanza 1.5 G CVT',type:'MPV',spec:'MPV • Automatic • 7 Penumpang',img:'/assets/avanza.webp',tags:['mpv'],message:'New Avanza 1.5 G CVT'},
-  {name:'New Veloz Hybrid EV',type:'HYBRID MPV',spec:'MPV • Automatic • 7 Penumpang',img:'/assets/veloz.webp',tags:['mpv','hybrid'],message:'New Veloz Hybrid EV'},
-  {name:'All New Innova Zenix Hybrid EV',type:'HYBRID MPV',spec:'MPV • Automatic • 7 Penumpang',img:'/assets/zenix.webp',tags:['mpv','hybrid'],message:'All New Innova Zenix Hybrid EV'},
-  {name:'Hiace Commuter',type:'COMMUTER',spec:'MPV • Manual • 8–15 Penumpang',img:'/assets/hiace.webp',tags:['commuter'],message:'Hiace Commuter'}
-];
+const fleet = window.GSO_FLEET;
 
 let filtered = [...fleet];
 let current = 0;
 const $ = id => document.getElementById(id);
-const wa = name => `https://wa.me/6281383552217?text=${encodeURIComponent(`Halo GSO Rental, saya ingin menanyakan ${name}.`)}`;
 
 function renderShowcase() {
   if (!filtered.length) return;
@@ -22,7 +16,13 @@ function renderShowcase() {
   $('main-car-type').textContent = main.type;
   $('main-car-name').textContent = main.name;
   $('main-car-spec').textContent = main.spec;
-  $('main-car-cta').href = wa(main.message);
+  $('main-car-cta').href = main.wa;
+  const price = $('main-car-price');
+  price.querySelector('small').textContent = main.priceLabel;
+  price.querySelector('strong').textContent = `${main.price} / ${main.period}`;
+  price.querySelector('p').textContent = `${main.mode} · BBM tidak termasuk`;
+  document.querySelectorAll('.showcase-arrow').forEach(button => button.disabled = filtered.length < 2);
+  document.querySelectorAll('.showcase-side').forEach(side => side.hidden = filtered.length < 2);
   $('prev-car-img').src = prev.img;
   $('prev-car-name').textContent = prev.name;
   $('next-car-img').src = next.img;
