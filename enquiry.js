@@ -18,6 +18,6 @@
       'Mohon penawaran tanpa BBM.'
     ].join('\n');
     // Same-tab navigation avoids pop-up blockers and leaves history for returning.
-    window.location.assign(`https://wa.me/6281383552217?text=${encodeURIComponent(message)}`);
+    window.location.assign(`https://wa.me/6281170070067?text=${encodeURIComponent(message)}`);
   });
 })();
